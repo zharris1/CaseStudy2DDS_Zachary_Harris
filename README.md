@@ -43,11 +43,15 @@ Used functions within package to order data in alphabetical and numerical order
 
 ###### class
 
+
 ###### caret
+
 
 ###### e1071
 
+
 ###### magrittr
+
 
 ###### leaps
 
