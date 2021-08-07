@@ -26,16 +26,32 @@ The libraries and packages used in this case study are commented out in the R sh
 
 
 ###### dplyr
+
 ###### ggplot2
+Creating plots and data visualizations
+
 ###### dlookr
+
 ###### visdat
+Analyze and examine data for missing values. Used in tidying data stage
+
 ###### GGally
-######forcats
+Used in EDA to determine and find correlation between variables in provided dataset
+
+###### forcats
+Used functions within package to order data in alphabetical and numerical order
+
 ###### class
+
 ###### caret
+
 ###### e1071
+
 ###### magrittr
+
 ###### leaps
+
+
 
 
   
