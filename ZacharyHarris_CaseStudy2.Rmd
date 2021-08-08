@@ -148,7 +148,9 @@ ggplot(caseStudy, aes(x= JobRole, y=MonthlyIncome, color = Attrition))+
   theme(plot.title = element_text(hjust = 0.5))
 ```  
 
+## Correlations
 
+A correlation matrix was put together so that we could understand if there were anymore variables in the data set that had relationships. Ideally, we are looking for items that are above 0.50.
 
 ```{r Correlations}
 # Correlations
@@ -158,6 +160,7 @@ ggpairs(select(caseStudy, JobLevel, MonthlyIncome, TotalWorkingYears,
 ```
 
 ## kNN Classifier
+The knn classifier was done with at 70-30 split. Seventy percent of the data used was for training and thirty percent was for testing. To change this, you can change the value of splitPerc. The knn was later used to predict attirtion values based of variables from a new data set. 
 ```{r kNN Classifier}
 
 #Split data set into partially test and partially train 
@@ -221,7 +224,8 @@ plot(spec$k,spec$specificity, type = "l", xlab = "k")
 axis(1, xaxp=c(0, 30, 30))
 ```
 
-##Linear Regression
+## Linear Regression
+A linear regression model was executed to predict monthly income. We began by using all variabes in the data set. We had to manituplate some qualitiative variabes and turn them into categories that could be turned on and off. Variable selection was based on p values and suggestions made by the program. Predictions were printed and saved.
 ```{r Linear Regression}
 #####Linear Regression#####
 
